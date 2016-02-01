@@ -1,0 +1,9 @@
+<koza>
+      <colors>
+        <color name="one" value="#00FF00" />
+        <color name="two" value="#a12345" />
+        <color name="three" value="#c2c145" />
+        <color name="four" value="#315a25" />
+        ...
+      </colors>
+    </koza>

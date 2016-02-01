@@ -13,8 +13,9 @@ import sys
 
 # dir ="/home/mark/Briefcase/Storage/ODK Briefcase Storage/forms/PSEIA_Lattice 2015-1.13/instances"
 # dir ="/home/mark/Briefcase/Storage/ODK Briefcase Storage/forms"
-dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms\\PSEIA_Lattice 2015-1.13\\instances"
-# dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms"
+# dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms\\PSEIA_Lattice 2015-1.13\\instances"
+# dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms\\PSEIA_Monopole_2015-1.15\\instances"
+dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms"
 
 
 # List of tags that require the removal of a string
@@ -164,7 +165,6 @@ class L:
         el_tilt = loading.find(ns("loading_electrical_tilt")).text
         mech_tilt = loading.find(ns("loading_mechanical_tilt")).text
         azim = loading.find(ns("loading_azimuth")).text
-        leg_alloc = loading.find(ns("loading_leg_allocation")).text
 
         # Do any sanitizing needed
         if not isinstance(height, str) :
@@ -180,7 +180,6 @@ class L:
         self.el_tilt = el_tilt
         self.mech_tilt = mech_tilt
         self.azim = azim
-        self.leg_alloc = leg_alloc
 
     def makeNode(self, newNode):
         members = vars(self)
@@ -208,7 +207,9 @@ def create_loading_table(doc):
     #         print child.tag, child.attrib
 
     group = root.find(ns("loadings_group"))
-    if len(group) > 0:
+    if group is None:
+        print "Damn - no loadings group found"
+    elif len(group) > 0:
         print "... found a loading group"
         loading_list = []
         loading_count = 0
@@ -272,27 +273,38 @@ else:
 
     for file_name in matches:
 
-        input_filename = file_name
-        output_filename = file_name + ".txt"
+        input_filename = file_name          # actually dealing with full paths here
+        dir, infilename = os.path.split( file_name)
 
-        print "Input " + input_filename
+        if not "uuid" in dir:
+            print "Skipping processing for non-UUID directory " + dir
+        else:
+            file, ext = os.path.splitext(infilename)
 
-        # input
-        doc = ET.parse(input_filename)
+            output_dir = dir + "/mog/"
+            if not os.path.exists(output_dir):
+                os.mkdir(output_dir)
 
-        # modification of data in place
-        uuid = modify(doc)
+            output_filename =  output_dir + file + ".mog"
 
-        create_loading_table(doc)
+            print "Input " + input_filename
 
-        if uuid:
-            clean_uuid = uuid.replace(":", "")
-            print clean_uuid
+            # input
+            doc = ET.parse(input_filename)
 
-        root_path = uuid_paths[matches.index(file_name)]
-        print root_path
-        print "Output " + output_filename
+            # modification of data in place
+            uuid = modify(doc)
 
-        # output
-        open(output_filename, 'w').write(ET.tostring(doc, pretty_print=True))
+            create_loading_table(doc)
+
+            if uuid:
+                clean_uuid = uuid.replace(":", "")
+                print clean_uuid
+
+            root_path = uuid_paths[matches.index(file_name)]
+            print root_path
+            print "Output " + output_filename
+
+            # output
+            open(output_filename, 'w').write(ET.tostring(doc, pretty_print=True))
 
