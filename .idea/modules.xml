@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../catalogger/.idea/Catalogger.iml" filepath="$PROJECT_DIR$/../catalogger/.idea/Catalogger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mags/.idea/Mags.iml" filepath="$PROJECT_DIR$/../Mags/.idea/Mags.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../.idea/PycharmProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../XML2JSON/.idea/XML2JSON.iml" filepath="$PROJECT_DIR$/../XML2JSON/.idea/XML2JSON.iml" />
+      <module fileurl="file://$USER_HOME$/Briefcase/scripts/.idea/scripts.iml" filepath="$USER_HOME$/Briefcase/scripts/.idea/scripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/transmogrifier.iml" filepath="$PROJECT_DIR$/.idea/transmogrifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../weather/.idea/weather.iml" filepath="$PROJECT_DIR$/../weather/.idea/weather.iml" />
     </modules>
   </component>
 </project>

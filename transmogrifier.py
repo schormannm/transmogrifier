@@ -1,29 +1,42 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-__author__ = 'mark'
+__author__ = 'mark schormann'
 
 import lxml.etree as ET
 import fnmatch
 import os
 import os.path
+import collections
 
 
 import sys
+
+import argparse
+
+
 
 # dir ="/home/mark/Briefcase/Storage/ODK Briefcase Storage/forms/PSEIA_Lattice 2015-1.13/instances"
 # dir ="/home/mark/Briefcase/Storage/ODK Briefcase Storage/forms"
 # dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms\\PSEIA_Lattice 2015-1.13\\instances"
 # dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms\\PSEIA_Monopole_2015-1.15\\instances"
-dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms"
+# dir ="C:\\RBI-Data\\Briefcase\\ODK Briefcase Storage\\forms"
+
 
 
 # List of tags that require the removal of a string
 removal_list=[["manufacturer","manufacturer_"],["external_coating_colour","external_colour_"]]
 
 # List of tags that require the removal of underscores
-us_list = ["inspector_name", "manufacturer", "ground_conditions", "infrastructure_contractor","road_conditions",
-           "ease_of_access","external_coating_colour"]
+fs_list = ["site_number","site_name"]
+
+# List of tags that require the removal of underscores
+us_list = ["inspector_name", "manufacturer", "ground_conditions", "infrastructure_contractor",
+           "road_conditions_access_type", "road_conditions_access_ease", "spine_height",
+           "external_coating_colour","monopole_tower_design", "contruction_type",
+           "tower_design","fall_arrest_grading", "container_owner", "container_type",
+           "transmission_type", "loading_type", "loading_make", "loading_owner", "loading_technology",
+           "loading_leg_allocation", "tower_type", "region", "tower_owner"]
 
 # List of tags that require conversion to Title case
 title_list = ["site_name"]
@@ -35,12 +48,23 @@ loc_list = ["gps_location"]
 yes_list = ["first_time", "sign_board", "fall_arrest_section_exists","operationally_active",
             "redundant_equipment_present","mid_man_way_door_exists","stub_section_exists","gusset_base_section_exists",
             "gusset_spine_section_exists","gusset_collar_section_exists","shaft_stiffener_fitted","shaft_spine_exists",
-            "cable_window_used","cable_gantry_outside",""]
+            "cable_window_used","cable_gantry_outside"]
+
+# List of tags that require reformatting
+reformat_list = ["loading_mechanical_tilt"]
+
+# List of Loading owners
+owners_list = ["Vodacom","MTN","Cell-C","Telkom","TelkomMobile","Sentech","Custom"]
+
+# List of loading types
+loading_types_list = ["Panel","Dish","RRU","Transmitter","Omni","Antenna","Diplexer","Triplexer","Camera","Feeders",
+                      "YAGI","ASC","Custom"]
 
 namespace_string = "{http://opendatakit.org/submissions}"
 
 def show_conversion(tag, text, converted_text):
-    print tag, text, "->", converted_text
+    # print tag, text, "->", converted_text
+    pass
 
 def dec2dms(dec_loc, dir):
     deg = int(dec_loc)
@@ -79,7 +103,13 @@ def insert_node(node, tag, value=""):
     else:
         node.append(child)
 
-# modification
+# ...
+#
+# This function does the modification in place of individual tag values to fix them so that
+# they don't need to be altered later.
+#
+# The order of the operations matters as some interdependencies exist
+# ...
 def modify(doc):
     retval = ""
     for el in doc.xpath("//*"):                 # process all elements
@@ -107,6 +137,14 @@ def modify(doc):
                     show_conversion(tag, text, clean_text)
                     text = clean_text
 
+            # replace forward slashes sectin
+            for fs_tag in fs_list:
+                if fs_tag == tag:
+                    clean_text = text.replace("/", "-")
+                    el.text = clean_text
+                    show_conversion(tag, text, clean_text)
+                    text = clean_text
+
             # Convert to Title case section
             for title_tag in title_list:
                 if title_tag == tag:
@@ -130,7 +168,7 @@ def modify(doc):
             for loc_tag in loc_list:
                 if loc_tag == tag:
                     location = text.split(" ")
-                    print location
+                    # print location
                     lat_dec = float(location[0])
                     lon_dec = float(location[1])
                     alt = float(location[2])
@@ -147,39 +185,62 @@ def modify(doc):
                     show_conversion(tag, text, clean_text)
                     text = clean_text
 
+            for reformat_tag in reformat_list:
+                if reformat_tag == tag:
+                    clean_text = "{:5.1f}".format(float(text))
+                    # print clean_text
+                    el.text = clean_text
+                    show_conversion(tag, text, clean_text)
+                    text = clean_text
+
             if tag == "instanceID":
-                print tag
-                print text
+                print tag + " = " + text
                 retval = text
 
     return retval
 
 
-class L:
+class Load:
     def __init__(self,loading):
         # unpack data from XML node
         height = loading.find(ns("loading_height")).text
-        size = loading.find(ns("loading_size")).text
-        type = loading.find(ns("loading_make")).text
         pole_mount = loading.find(ns("loading_pole_mount")).text
         el_tilt = loading.find(ns("loading_electrical_tilt")).text
         mech_tilt = loading.find(ns("loading_mechanical_tilt")).text
         azim = loading.find(ns("loading_azimuth")).text
+        active = loading.find(ns("operationally_active")).text
+        leg_node = loading.find(ns("loading_leg_allocation"))
 
         # Do any sanitizing needed
         if not isinstance(height, str) :
             height = "0"
 
+        if leg_node is None:
+            leg = "0"
+        else:
+            leg = loading.find(ns("loading_leg_allocation")).text
+
         # allocated data to object variables
         self.height = height
         self.owner = loading.find(ns("loading_owner")).text
         self.make = loading.find(ns("loading_make")).text
-        self.size = size
-        self.type = type
+        self.size = loading.find(ns("loading_size")).text
+        self.type = loading.find(ns("loading_type")).text
         self.pole_mount = pole_mount
         self.el_tilt = el_tilt
         self.mech_tilt = mech_tilt
         self.azim = azim
+        self.active = active
+        self.leg = leg
+
+    def getType(self):
+        return self.type
+
+    def getOwner(self):
+        return self.owner
+
+    def getMake(self):
+        return self.make
 
     def makeNode(self, newNode):
         members = vars(self)
@@ -188,7 +249,6 @@ class L:
             newNodeName.text = getattr(self, member)
             newNode.append(newNodeName)
 
-
     def __cmp__(self,other):
         return cmp(self.count,other.count)
 
@@ -196,9 +256,30 @@ class L:
 def ns(tag):
     return namespace_string + tag
 
+def tree():
+    return collections.defaultdict(tree)
 
-def create_loading_table(doc):
-    print "processing loading table now"
+def makeSummary(newNode, total_loadings):
+    for owner in owners_list:
+        ownerNode = ET.Element(owner)
+        # newNode = ET.Element(newNodeStr)
+        for loading_type in loading_types_list:
+            loadingNodeName = ET.Element(loading_type)
+            value = total_loadings.get(owner).get(loading_type)
+            # print owner, loading_type, value
+            loadingNodeName.text = str(value)
+            ownerNode.append(loadingNodeName)
+
+        newNode.append(ownerNode)
+# ...
+# This function takes all the loadings recorded during each inspection and creates a
+# sorted loading table,
+#
+# A Sorted loading table is a table of loadingsm where each loading is ordered in terms of it height AGL
+# ...
+
+def create_sorted_loading_table(doc):
+    print "processing loading table to create sorted now"
     root = doc.getroot()
     # print root.tag, root.attrib
 
@@ -215,7 +296,7 @@ def create_loading_table(doc):
         loading_count = 0
         for loading_node in group.findall(ns("loading_repeat")):
             loading_count += 1
-            new_loading = L(loading_node)
+            new_loading = Load(loading_node)
             loading_list.append(new_loading)
 
         print "Found " + str(loading_count) + " loadings"
@@ -225,13 +306,13 @@ def create_loading_table(doc):
         print "Now sorted"
 
         # output loading table back into XML document in memory
-        ltNode = ET.Element("loading_table")
+        ltNode = ET.Element("sorted_loading_table")
 
         for loading in sorted_loading_list:
-            newNodeStr = "LT-repeat"
+            newNodeStr = "sorted_loading_table-repeat"
             newNode = ET.Element(newNodeStr)
             loading.makeNode(newNode)
-            print loading.height
+            # print loading.height
             ltNode.append(newNode)
 
         group.insert(0, ltNode)
@@ -241,38 +322,131 @@ def create_loading_table(doc):
         # insert_node(root, "loadings_group", "Added"  )
         insert_node(group, "loadings_present", "0")
 
+# ...
+# This function takes all the loadings recorded during each inspection and creates a
+# summary loading table
+#
+# A Summary loading table is a table of loadings organized by owner and loading type
+# ...
+def create_summary_loading_table(doc):
+    print "processing loading table to create summary now"
+    root = doc.getroot()
+    # print root.tag, root.attrib
 
+    # for child in root:
+    #     if("loadings_group" in child.tag):
+    #         print child.tag, child.attrib
+
+    group = root.find(ns("loadings_group"))
+    if group is None:
+        print "Damn - no loadings group found"
+    elif len(group) > 0:
+        print "... found a loading group"
+        loading_list = []
+        loading_count = 0
+        for loading_node in group.findall(ns("loading_repeat")):
+            loading_count += 1
+            new_loading = Load(loading_node)
+            loading_list.append(new_loading)
+
+        print "Found " + str(loading_count) + " loadings"
+        insert_node(group, "loadings_present", str(loading_count))
+
+
+        # Extra loading types
+        # MDGA
+        # Spotlight
+        # TMA
+
+        # Create
+        # Fill
+        # Extract
+        total_loadings = tree()
+
+        for owner in owners_list:
+            for loading_type in loading_types_list:
+                total_loadings [owner][loading_type] = 0
+
+        # print total_loadings
+        for loading in loading_list:
+            owner = loading.getOwner()
+            type = loading.getType()
+            make = loading.getMake()
+            # print owner, type, make
+            if owner in owners_list and type in loading_types_list:
+                value = total_loadings.get(owner).get(type)
+                total_loadings [owner] [type] =  1 + int(value)
+
+        # print total_loadings
+
+        # sorted_loading_list = sorted(loading_list, key = lambda l: int(l.height))
+        print "Now summarized"
+        #
+        # output summary loading table back into XML document in memory
+        ltNode = ET.Element("summary_loading_table")
+
+        # for loading in loading_list:
+        #     loading.makeSummaryNode(ltNode, total_loadings)
+             # ltNode.append(newNode)
+        makeSummary(ltNode, total_loadings)
+
+        group.insert(0, ltNode)
+
+    else:
+        print "....no loadings on this tower"
+        # insert_node(root, "loadings_group", "Added"  )
+        insert_node(group, "loadings_present", "0")
+
+#=============================================================================================================
 #
 # The transmogrifier searches for specific patterns in submission.xml files and replaces them with a designated
 # replacement pattern
 #
-if len(sys.argv) <= 1:
-    print "Usage : python transmogrifier.py <input filename> <output filename>"
+
+parser = argparse.ArgumentParser(description="takes an Aggregate XML file and produces a MOG file")
+parser.add_argument("input_filename", help="the name of the input XML file without path")
+parser.add_argument("dir", help="the base path under which all the XML files reside in their "
+                                "respective sub-directories")
+try:
+    args = parser.parse_args()
+except argparse.ArgumentError, exc:
+    print exc.message, '\n', exc.argument
+
+input_filename = args.input_filename
+dir = args.dir
+
+print "\nTransmogrifier starting up ...."
+
+if not os.path.exists(dir):
+    print "Horror - input directory " + dir , " does NOT exist! That's BAD!"
+    exit()
+
 else:
-    input_filename = sys.argv[1]
-    output_filename = sys.argv[2]
+    print "Great - input directory -> " + dir + " - EXISTS. All good."
 
     matches = []
     uuid_paths = []
     sites = []
     count = 0
-    if os.path.exists(dir):
-        for root, dirnames, filenames in os.walk(dir):
-            # print root
-            # print dirnames
-            # print filenames
-            for filename in fnmatch.filter(filenames, '*.xml'):
-                matches.append(os.path.join(root, filename))
-                uuid_paths.append(root)
-                count += 1
-    else:
-        print dir , " does not exist"
+
+    for root, dirnames, filenames in os.walk(dir):
+        # print root
+        # print dirnames
+        # print filenames
+        for filename in fnmatch.filter(filenames, '*.xml'):
+            matches.append(os.path.join(root, filename))
+            uuid_paths.append(root)
+            count += 1
 
     print "Examined ", count, " files"
     print "Found " , len(matches), " .xml files to search"
 
-    for file_name in matches:
+    file_count = 0
+    total_file_count = len(matches)
 
+    for file_name in matches:
+        print "===================================================================="
+        file_count += 1
         input_filename = file_name          # actually dealing with full paths here
         dir, infilename = os.path.split( file_name)
 
@@ -295,7 +469,13 @@ else:
             # modification of data in place
             uuid = modify(doc)
 
-            create_loading_table(doc)
+            # create a version of the loading table that is sorted based of height AGL
+            create_sorted_loading_table(doc)
+
+            # create a version of the loading table that summarizes the loadings
+            # categorized be make and ownwer
+            create_summary_loading_table(doc)
+
 
             if uuid:
                 clean_uuid = uuid.replace(":", "")
@@ -307,4 +487,6 @@ else:
 
             # output
             open(output_filename, 'w').write(ET.tostring(doc, pretty_print=True))
+
+            print "Completed processing of file # " + str(file_count) + " out of " + str(total_file_count)
 
