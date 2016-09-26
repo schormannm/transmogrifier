@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="First commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../FillDatabase/create_mongo_indices.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../FillDatabase/dbhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../FillDatabase/filldb.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../FillDatabase/submission.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../FillDatabase/xml2json.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../RBI-Sites/cC66j0Bz.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../RBI-Sites/g7XcxtAE.xlsx" afterPath="" />
+    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/config.py" afterPath="$PROJECT_DIR$/../RBI-Sites/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" afterPath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" />
@@ -17,6 +10,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/mockdbhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/mockdbhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/passwordhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/passwordhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/rbi-sites.wsgi" afterPath="$PROJECT_DIR$/../RBI-Sites/rbi-sites.wsgi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/rbisites.py" afterPath="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap.css" />
@@ -55,7 +49,7 @@
     <SUITE FILE_PATH="coverage/transmogrifier$index.coverage" NAME="index Coverage Results" MODIFIED="1469236107478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weather" />
     <SUITE FILE_PATH="coverage/transmogrifier$waitercaller.coverage" NAME="waitercaller Coverage Results" MODIFIED="1470613387070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weather" />
     <SUITE FILE_PATH="coverage/transmogrifier$catalogger.coverage" NAME="catalogger Coverage Results" MODIFIED="1473628768939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../catalogger" />
-    <SUITE FILE_PATH="coverage/transmogrifier$rbi_sites.coverage" NAME="rbi-sites Coverage Results" MODIFIED="1474842533773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RBI-Sites" />
+    <SUITE FILE_PATH="coverage/transmogrifier$rbi_sites.coverage" NAME="rbi-sites Coverage Results" MODIFIED="1474909344271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RBI-Sites" />
     <SUITE FILE_PATH="coverage/transmogrifier$create_mongo_indices.coverage" NAME="create_mongo_indices Coverage Results" MODIFIED="1473634177241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FillDatabase" />
     <SUITE FILE_PATH="coverage/transmogrifier$filldb.coverage" NAME="filldb Coverage Results" MODIFIED="1473635042063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FillDatabase" />
     <SUITE FILE_PATH="coverage/transmogrifier$monogocatalogger.coverage" NAME="monogocatalogger Coverage Results" MODIFIED="1474461702464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MongoCatalogger" />
@@ -75,8 +69,8 @@
       <file leaf-file-name="showsite.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/showsite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="210">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -102,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lookup.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lookup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/lookup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="363">
+              <caret line="55" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,18 +129,30 @@
       <file leaf-file-name="rbisites.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3536">
-              <caret line="277" column="37" selection-start-line="277" selection-start-column="37" selection-end-line="277" selection-end-column="37" />
+            <state relative-caret-position="204">
+              <caret line="156" column="37" selection-start-line="156" selection-start-column="37" selection-end-line="156" selection-end-column="37" />
               <folding>
                 <element signature="e#7321#7441#0" expanded="false" />
                 <element signature="e#7499#7586#0" expanded="false" />
                 <element signature="e#7645#8170#0" expanded="false" />
                 <element signature="e#8235#8874#0" expanded="false" />
                 <element signature="e#8917#8967#0" expanded="false" />
+                <element signature="e#9032#9720#0" expanded="false" />
                 <element signature="e#9801#9920#0" expanded="false" />
-                <element signature="e#12117#12388#0" expanded="false" />
-                <element signature="e#13849#14530#0" expanded="false" />
+                <element signature="e#11476#12161#0" expanded="false" />
+                <element signature="e#12505#12776#0" expanded="false" />
+                <element signature="e#14237#14918#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,10 +237,10 @@
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/base.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/dbhelper.py" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/forms.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/output.html" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/showsite.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/forms.py" />
       </list>
     </option>
   </component>
@@ -854,33 +860,40 @@
       <option name="project" value="LOCAL" />
       <updated>1474898412130</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding extra files">
+      <created>1474904469186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1474904469186</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="850" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25110132" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25110132" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843792" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34445927" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -936,14 +949,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Adding extra files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding extra files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1143,6 +1157,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,6 +1179,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,37 +1248,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../RBI-Sites/dbhelper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3536">
-          <caret line="277" column="37" selection-start-line="277" selection-start-column="37" selection-end-line="277" selection-end-column="37" />
-          <folding>
-            <element signature="e#7321#7441#0" expanded="false" />
-            <element signature="e#7499#7586#0" expanded="false" />
-            <element signature="e#7645#8170#0" expanded="false" />
-            <element signature="e#8235#8874#0" expanded="false" />
-            <element signature="e#8917#8967#0" expanded="false" />
-            <element signature="e#9801#9920#0" expanded="false" />
-            <element signature="e#12117#12388#0" expanded="false" />
-            <element signature="e#13849#14530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1283,18 +1274,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/showsite.html">
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/lookup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="363">
+          <caret line="55" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/lookup.html">
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/showsite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="156" column="37" selection-start-line="156" selection-start-column="37" selection-end-line="156" selection-end-column="37" />
+          <folding>
+            <element signature="e#7321#7441#0" expanded="false" />
+            <element signature="e#7499#7586#0" expanded="false" />
+            <element signature="e#7645#8170#0" expanded="false" />
+            <element signature="e#8235#8874#0" expanded="false" />
+            <element signature="e#8917#8967#0" expanded="false" />
+            <element signature="e#9032#9720#0" expanded="false" />
+            <element signature="e#9801#9920#0" expanded="false" />
+            <element signature="e#11476#12161#0" expanded="false" />
+            <element signature="e#12505#12776#0" expanded="false" />
+            <element signature="e#14237#14918#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
