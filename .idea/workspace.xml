@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="Before cleaning up code">
+    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/config.py" afterPath="$PROJECT_DIR$/../RBI-Sites/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" afterPath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" />
