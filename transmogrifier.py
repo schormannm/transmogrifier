@@ -6,6 +6,7 @@ __author__ = 'mark schormann'
 import lxml.etree as ET
 import fnmatch
 import os
+import stat
 import os.path
 import collections
 
@@ -397,6 +398,22 @@ def create_summary_loading_table(doc):
         # insert_node(root, "loadings_group", "Added"  )
         insert_node(group, "loadings_present", "0")
 
+
+def set_write_permissions(path):
+    """Remove write permissions from this path, while keeping all other permissions intact.
+
+    Params:
+        path:  The path whose permissions to alter.
+    """
+    USER_WRITING = stat.S_IWUSR
+    GROUP_WRITING = stat.S_IWGRP
+    OTHER_WRITING = stat.S_IWOTH
+    WRITING = USER_WRITING | GROUP_WRITING | OTHER_WRITING
+
+    current_permissions = stat.S_IMODE(os.lstat(path).st_mode)
+
+    os.chmod(path, current_permissions | WRITING)
+
 #=============================================================================================================
 #
 # The transmogrifier searches for specific patterns in submission.xml files and replaces them with a designated
@@ -487,6 +504,6 @@ else:
 
             # output
             open(output_filename, 'w').write(ET.tostring(doc, pretty_print=True))
-
+            set_write_permissions(output_filename)  # for other programs that come later - bad but convenient
             print "Completed processing of file # " + str(file_count) + " out of " + str(total_file_count)
 
