@@ -111,7 +111,7 @@ def insert_node(node, tag, value=""):
 #
 # The order of the operations matters as some interdependencies exist
 # ...
-def modify(doc):
+def mogrify(doc):
     retval = ""
     for el in doc.xpath("//*"):                 # process all elements
         text = el.text                          # get the text part of the element
@@ -398,7 +398,6 @@ def create_summary_loading_table(doc):
         # insert_node(root, "loadings_group", "Added"  )
         insert_node(group, "loadings_present", "0")
 
-
 def set_write_permissions(path):
     """Remove write permissions from this path, while keeping all other permissions intact.
 
@@ -484,7 +483,7 @@ else:
             doc = ET.parse(input_filename)
 
             # modification of data in place
-            uuid = modify(doc)
+            uuid = mogrify(doc)
 
             # create a version of the loading table that is sorted based of height AGL
             create_sorted_loading_table(doc)
