@@ -10,6 +10,7 @@ import stat
 import os.path
 import collections
 
+import shutil
 
 import sys
 
@@ -353,15 +354,6 @@ def create_summary_loading_table(doc):
         print "Found " + str(loading_count) + " loadings"
         insert_node(group, "loadings_present", str(loading_count))
 
-
-        # Extra loading types
-        # MDGA
-        # Spotlight
-        # TMA
-
-        # Create
-        # Fill
-        # Extract
         total_loadings = tree()
 
         for owner in owners_list:
@@ -472,8 +464,24 @@ else:
             file, ext = os.path.splitext(infilename)
 
             output_dir = dir + "/mog/"
+            backup_filename = file + ".bak"
+            backup_file = output_dir + backup_filename
+
+            # This was used to cleanup after making a mess in the mog directories
+            # if os.path.exists(output_dir):
+            #     shutil.rmtree(output_dir)
+            #     print "Removing " + output_dir
+            #
+            # continue
+
             if not os.path.exists(output_dir):
                 os.mkdir(output_dir)
+
+            if not os.path.exists(backup_file):
+                shutil.copyfile(input_filename, backup_file)  # create the backup using full path input filename
+                print "Backup made " + backup_file
+            else:
+                print "Backup found"
 
             output_filename =  output_dir + file + ".mog"
 
