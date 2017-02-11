@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="Before cleaning up code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Kivy-test/kivy-test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/bitlyhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/create_mongo_indices.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/dbhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/mockbitlyhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/mockdbhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/passwordhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/static/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/templates/account.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/templates/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/templates/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/user.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/waitercaller.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WaiterCaller/waitercaller.wsgi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../catalogger/summary.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
+    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FillDatabase/filldb.py" afterPath="$PROJECT_DIR$/../FillDatabase/filldb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/config.py" afterPath="$PROJECT_DIR$/../RBI-Sites/config.py" />
@@ -134,8 +101,8 @@
       <file leaf-file-name="filldb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../FillDatabase/filldb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="124" column="84" selection-start-line="124" selection-start-column="84" selection-end-line="124" selection-end-column="84" />
+            <state relative-caret-position="395">
+              <caret line="128" column="57" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -1026,14 +993,21 @@
       <option name="project" value="LOCAL" />
       <updated>1486684165546</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added extra meta fields">
+      <created>1486844059382</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1486844059382</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="849" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25062814" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25062814" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1125,7 +1099,8 @@
     <MESSAGE value="Minor fixes" />
     <MESSAGE value="Added the backup procedure so that a backup is saved of each submission" />
     <MESSAGE value="Began adding META fields to database to enable the transfer of sites to Voda through the REST interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Began adding META fields to database to enable the transfer of sites to Voda through the REST interface" />
+    <MESSAGE value="Added extra meta fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added extra meta fields" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1511,8 +1486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../FillDatabase/filldb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="124" column="84" selection-start-line="124" selection-start-column="84" selection-end-line="124" selection-end-column="84" />
+        <state relative-caret-position="395">
+          <caret line="128" column="57" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
           <folding />
         </state>
       </provider>
