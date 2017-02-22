@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="Added extra meta fields">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FillDatabase/filldb.py" afterPath="$PROJECT_DIR$/../FillDatabase/filldb.py" />
+    <list default="true" id="4deff8a9-cab3-48c1-9cf5-b34591438372" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Xonomy XML viewing/Xonomy_XML_tests/snippet_for_xonomy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/bitlyhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/config.py" afterPath="$PROJECT_DIR$/../RBI-Sites/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" afterPath="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" />
@@ -11,6 +12,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/mockdbhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/mockdbhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/passwordhelper.py" afterPath="$PROJECT_DIR$/../RBI-Sites/passwordhelper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/rbi-sites.wsgi" afterPath="$PROJECT_DIR$/../RBI-Sites/rbi-sites.wsgi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/rbisites.py" afterPath="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap-theme.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/../RBI-Sites/static/css/bootstrap.css" />
@@ -22,13 +24,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/base.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/download.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/download.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/edit-site.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/edit-site.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/home.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/index.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/invalid_city.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/invalid_city.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/lookup.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/lookup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/output.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/output.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/register_new_user.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/register_new_user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/templates/showsite.html" afterPath="$PROJECT_DIR$/../RBI-Sites/templates/showsite.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RBI-Sites/user.py" afterPath="$PROJECT_DIR$/../RBI-Sites/user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,7 +44,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/transmogrifier$catalogger.coverage" NAME="catalogger Coverage Results" MODIFIED="1479080804111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../catalogger" />
     <SUITE FILE_PATH="coverage/transmogrifier$summary.coverage" NAME="summary Coverage Results" MODIFIED="1484265232175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../catalogger" />
-    <SUITE FILE_PATH="coverage/transmogrifier$filldb.coverage" NAME="filldb Coverage Results" MODIFIED="1486842380793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FillDatabase" />
+    <SUITE FILE_PATH="coverage/transmogrifier$filldb.coverage" NAME="filldb Coverage Results" MODIFIED="1486844453990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FillDatabase" />
     <SUITE FILE_PATH="coverage/transmogrifier$file_check_Monopole16.coverage" NAME="file_check_Monopole16 Coverage Results" MODIFIED="1477686458664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Mags" />
     <SUITE FILE_PATH="coverage/transmogrifier$transmogrifier.coverage" NAME="transmogrifier Coverage Results" MODIFIED="1486677344532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/transmogrifier$test.coverage" NAME="test Coverage Results" MODIFIED="1469482227093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Briefcase/scripts" />
@@ -53,7 +52,7 @@
     <SUITE FILE_PATH="coverage/transmogrifier$index.coverage" NAME="index Coverage Results" MODIFIED="1469236107478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weather" />
     <SUITE FILE_PATH="coverage/transmogrifier$waitercaller.coverage" NAME="waitercaller Coverage Results" MODIFIED="1470613387070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../weather" />
     <SUITE FILE_PATH="coverage/transmogrifier$kivy_test.coverage" NAME="kivy-test Coverage Results" MODIFIED="1477436533474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Kivy-test" />
-    <SUITE FILE_PATH="coverage/transmogrifier$rbi_sites.coverage" NAME="rbi-sites Coverage Results" MODIFIED="1485018065063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RBI-Sites" />
+    <SUITE FILE_PATH="coverage/transmogrifier$rbi_sites.coverage" NAME="rbi-sites Coverage Results" MODIFIED="1487715605100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RBI-Sites" />
     <SUITE FILE_PATH="coverage/transmogrifier$create_mongo_indices.coverage" NAME="create_mongo_indices Coverage Results" MODIFIED="1473634177241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FillDatabase" />
     <SUITE FILE_PATH="coverage/transmogrifier$monogocatalogger.coverage" NAME="monogocatalogger Coverage Results" MODIFIED="1474461702464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MongoCatalogger" />
     <SUITE FILE_PATH="coverage/transmogrifier$vort.coverage" NAME="vort Coverage Results" MODIFIED="1477003580870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RBI-Sites" />
@@ -69,12 +68,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workbook_output.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RBI-Sites/workbook_output.py">
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit-site.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/edit-site.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RBI-Sites/dbhelper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,37 +123,29 @@
       <file leaf-file-name="rbisites.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3961">
-              <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="379" column="50" selection-start-line="379" selection-start-column="50" selection-end-line="379" selection-end-column="50" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#1683#1770#0" expanded="false" />
-                <element signature="e#1829#2354#0" expanded="false" />
-                <element signature="e#2419#3228#0" expanded="false" />
-                <element signature="e#3271#3321#0" expanded="false" />
-                <element signature="e#3386#4077#0" expanded="false" />
-                <element signature="e#4158#4277#0" expanded="false" />
-                <element signature="e#4336#4398#0" expanded="false" />
+                <element signature="e#1709#1796#0" expanded="false" />
+                <element signature="e#1855#2383#0" expanded="false" />
+                <element signature="e#2448#3257#0" expanded="false" />
+                <element signature="e#3300#3350#0" expanded="false" />
+                <element signature="e#3415#4677#0" expanded="false" />
+                <element signature="e#4758#4877#0" expanded="false" />
+                <element signature="e#7160#7717#0" expanded="false" />
+                <element signature="e#7819#9685#0" expanded="false" />
+                <element signature="e#9778#11162#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filldb.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filldb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../FillDatabase/filldb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../FillDatabase/dbhelper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -124,8 +157,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -142,17 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../weather/templates/home.html" />
-        <option value="$PROJECT_DIR$/../weather/passwordhelper.py" />
-        <option value="$PROJECT_DIR$/../weather/mockdbhelper.py" />
-        <option value="$PROJECT_DIR$/../weather/weather.py" />
-        <option value="$PROJECT_DIR$/../weather/config.py" />
-        <option value="$PROJECT_DIR$/../XML2JSON/submission2.json" />
-        <option value="$PROJECT_DIR$/../XML2JSON/dbhelper.py" />
-        <option value="$PROJECT_DIR$/../XML2JSON/xml2json.py" />
-        <option value="$PROJECT_DIR$/../catalogger/catalogger.py" />
-        <option value="$PROJECT_DIR$/../catalogger/dbhelper.py" />
-        <option value="$PROJECT_DIR$/../FillDatabase/create_mongo_indices.py" />
         <option value="$USER_HOME$/untitled/untitled.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/create_mongo_indices.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/config.py" />
@@ -165,17 +187,13 @@
         <option value="$PROJECT_DIR$/../MongoCatalogger/monogocatalogger.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/my-utils.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/scraps.py" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/extras.html" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/templates/lookup.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/showsite.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/comparison.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/test-bootstrap.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/vort.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/vort.py" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/dbhelper.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/register_new_user.html" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/templates/home.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/_form_helpers.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/forms.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/_formhelpers.html" />
@@ -183,16 +201,31 @@
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/output.html" />
         <option value="$PROJECT_DIR$/../Kivy-test/kivy-test.py" />
         <option value="$PROJECT_DIR$/../Mags/file_check_Monopole16.py" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/templates/base.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/compare.html" />
         <option value="$PROJECT_DIR$/../RBI-Sites/workbook_output.py" />
         <option value="$PROJECT_DIR$/../catalogger/Catalog1.py" />
         <option value="$PROJECT_DIR$/../catalogger/summary.py" />
         <option value="$PROJECT_DIR$/../RBI-Sites/templates/download.html" />
-        <option value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
         <option value="$PROJECT_DIR$/../FillDatabase/dbhelper.py" />
         <option value="$PROJECT_DIR$/transmogrifier.py" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/updatesite.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/editsite.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/lookup-edit.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/lookup.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/update-site.html" />
+        <option value="$PROJECT_DIR$/../Xonomy XML viewing/test_xml2.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/static/xonomy/docspec.js" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/snippet_for_xonomy.html" />
+        <option value="$USER_HOME$/Briefcase/Storage/Storage_Archive/ODK Briefcase Storage/forms/PSEIA_Lattice_2015-1.16/instances/uuidadc66503-9282-43e7-8531-8ba7584cf54b/submission.xml" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/edit.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/update.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/base.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/home.html" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/dbhelper.py" />
         <option value="$PROJECT_DIR$/../FillDatabase/filldb.py" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
+        <option value="$PROJECT_DIR$/../RBI-Sites/templates/edit-site.html" />
       </list>
     </option>
   </component>
@@ -203,9 +236,26 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="25" />
-    <option name="width" value="1600" />
-    <option name="height" value="849" />
+    <option name="x" value="-4" />
+    <option name="y" value="24" />
+    <option name="width" value="1608" />
+    <option name="height" value="855" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>ReST</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -232,7 +282,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,52 +310,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transmogrifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PycharmProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FillDatabase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transmogrifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PycharmProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transmogrifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Xonomy XML viewing" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
     <property name="settings.editor.splitter.proportion" value="0.30374753" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -311,10 +333,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../Xonomy XML viewing/Xonomy_XML_tests" />
+      <recent name="$PROJECT_DIR$/../RBI-Sites/static" />
       <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/../RBI-Sites/templates" />
       <recent name="$PROJECT_DIR$/../RBI-Sites" />
-      <recent name="$PROJECT_DIR$/../weather/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../RBI-Sites/templates" />
@@ -324,25 +347,7 @@
       <recent name="$PROJECT_DIR$/../RBI-Sites/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.filldb">
-    <configuration default="false" name="rbi-sites" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../RBI-Sites" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PycharmProjects" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.rbi-sites">
     <configuration default="false" name="vort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -780,6 +785,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="rbi-sites" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../RBI-Sites" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PycharmProjects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../RBI-Sites/rbisites.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Python.file_check_all" />
       <item index="1" class="java.lang.String" itemvalue="Python.transmogrifier" />
@@ -795,12 +818,11 @@
       <item index="11" class="java.lang.String" itemvalue="Python.summary" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rbi-sites" />
-        <item index="1" class="java.lang.String" itemvalue="Python.summary" />
-        <item index="2" class="java.lang.String" itemvalue="Python.file_check_Monopole16" />
-        <item index="3" class="java.lang.String" itemvalue="Python.kivy-test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.vort" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.summary" />
+        <item index="1" class="java.lang.String" itemvalue="Python.file_check_Monopole16" />
+        <item index="2" class="java.lang.String" itemvalue="Python.kivy-test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vort" />
       </list>
     </recent_temporary>
   </component>
@@ -1014,22 +1036,43 @@
       <option name="project" value="LOCAL" />
       <updated>1486844325790</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added extra meta fields - Reformat code turned off">
+      <created>1486844400972</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1486844400972</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Change date format">
+      <created>1487107484464</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1487107484464</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Change date format&#10;&#10;Added the update of the meta tags to indicate the edit has happened">
+      <created>1487107579099</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1487107579099</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1600" height="849" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="24" width="1608" height="855" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25062814" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.250625" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841823" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32841823" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39678285" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1039,7 +1082,7 @@
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34445927" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707775" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1047,22 +1090,22 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841823" sideWeight="0.50220263" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34445927" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25062814" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3257979" sideWeight="0.49779737" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.249375" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275401" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707775" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39678285" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1114,125 +1157,21 @@
     <MESSAGE value="Added the backup procedure so that a backup is saved of each submission" />
     <MESSAGE value="Began adding META fields to database to enable the transfer of sites to Voda through the REST interface" />
     <MESSAGE value="Added extra meta fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added extra meta fields" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Added extra meta fields - Reformat code turned off" />
+    <MESSAGE value="Change date format" />
+    <MESSAGE value="Change date format&#10;&#10;Added the update of the meta tags to indicate the edit has happened" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change date format&#10;&#10;Added the update of the meta tags to indicate the edit has happened" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../MongoCatalogger/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/myutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/scraps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="219" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../weather/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../weather/templates/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../weather/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/extras.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/showsite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../weather/waitercaller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="118" column="84" selection-start-line="118" selection-start-column="75" selection-end-line="118" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Python/#/home/mark/PycharmProjects/RBI-Sites/rbisites.py">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#/home/mark/PycharmProjects/RBI-Sites/rbisites.py</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="595.0" y="347.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/lookup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -1289,13 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/register_new_user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1306,13 +1238,6 @@
     <entry file="file://$PROJECT_DIR$/../RBI-Sites/static/images/l-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../MongoCatalogger/monogocatalogger.py">
@@ -1343,13 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/vort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1375,13 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="488" column="8" selection-start-line="488" selection-start-column="8" selection-end-line="488" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1436,26 +1347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../RBI-Sites/workbook_output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="17">
           <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3961">
-          <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#1683#1770#0" expanded="false" />
-            <element signature="e#1829#2354#0" expanded="false" />
-            <element signature="e#2419#3228#0" expanded="false" />
-            <element signature="e#3271#3321#0" expanded="false" />
-            <element signature="e#3386#4077#0" expanded="false" />
-            <element signature="e#4158#4277#0" expanded="false" />
-            <element signature="e#4336#4398#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1463,14 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../FillDatabase/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,16 +1377,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="484" column="0" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FillDatabase/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Xonomy XML viewing/test_xml2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Xonomy XML viewing/Xonomy_XML_tests/test_xml2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/static/xonomy/docspec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="228" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Xonomy XML viewing/test_xml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="7" selection-start-column="1" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Xonomy XML viewing/Xonomy_XML_tests/snippet_for_xonomy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="220" column="38" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/update-site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Briefcase/Storage/Storage_Archive/ODK Briefcase Storage/forms/PSEIA_Lattice_2015-1.16/instances/uuidadc66503-9282-43e7-8531-8ba7584cf54b/submission.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="393" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Xonomy XML viewing/Xonomy_XML_tests/test_from_michal.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/invalid_city.html" />
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="70" />
           <folding>
-            <element signature="e#74#97#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../FillDatabase/filldb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="123" column="48" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/rbisites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="379" column="50" selection-start-line="379" selection-start-column="50" selection-end-line="379" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1709#1796#0" expanded="false" />
+            <element signature="e#1855#2383#0" expanded="false" />
+            <element signature="e#2448#3257#0" expanded="false" />
+            <element signature="e#3300#3350#0" expanded="false" />
+            <element signature="e#3415#4677#0" expanded="false" />
+            <element signature="e#4758#4877#0" expanded="false" />
+            <element signature="e#7160#7717#0" expanded="false" />
+            <element signature="e#7819#9685#0" expanded="false" />
+            <element signature="e#9778#11162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RBI-Sites/templates/edit-site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="297" column="16" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="16" />
           <folding />
         </state>
       </provider>
